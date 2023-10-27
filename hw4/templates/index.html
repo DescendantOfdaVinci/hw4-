@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint">
+    <link rel="https://getbootstrap.com/docs/5.3/forms/overview/">
+
+    <title>Cars</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="mb-3 style='margin-top: 50px">
+            <label for="cars_brand" class="form-label">Cars_brand</label>
+            <input name="cars_brand" type="text" class="form-control" id="cars_brand">
+        </div>
+        <div class="mb-3 style='margin-top: 50px">
+            <label for="release_date" class="form-label">release_date</label>
+            <input name="release_date" type="number" class="form-control" id="release_date">
+        </div>
+        <div class="mb-3 style='margin-top: 50px">
+            <label for="cars_colour" class="form-label">cars_colour</label>
+            <input name="cars_colour" type="text" class="form-control" id="cars_colour">
+        </div>
+        <div class="mb-3 style='margin-top: 50px">
+            <label for="cars_probeg" class="form-label">cars_probeg</label>
+            <input name="cars_probeg" type="number" class="form-control" id="cars_probeg">
+        </div>
+        <div class="mb-3 style='margin-top: 50px">
+            <label for="cars_price" class="form-label">cars_price</label>
+            <input name="cars_price" type="number" class="form-control" id="cars_price">
+        </div>
+        <button name="get_info" type="submit" class="btn btn-primary">add car info</button>
+    </form>
+</body>
+</html>
